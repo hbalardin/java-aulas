@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-class Main {
+class Exercise04 {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     DecimalFormat decimalFormat = new DecimalFormat("#.0");

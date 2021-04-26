@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Mains {
+class BytesExercise {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
   

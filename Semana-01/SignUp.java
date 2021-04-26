@@ -1,4 +1,4 @@
-class Main {
+class SignUp {
   public static void main(String[] args) {
     String name = "Donald Draper";
     int age = 48;

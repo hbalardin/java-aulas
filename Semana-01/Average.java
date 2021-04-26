@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class Average {
   public static void main(String[] args) {
     Scanner keyboard = new Scanner(System.in);
 
