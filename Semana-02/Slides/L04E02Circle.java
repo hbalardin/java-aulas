@@ -1,32 +1,25 @@
-import java.util.Scanner;
-
 public class L04E02Circle {
   double radius;
 
-  double area;
-
-  double circumference;
-
-  L04E02Circle() {
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.print("Enter circle radius: ");
-    this.radius = scanner.nextDouble();
-
-    this.calculateArea();
-    this.calculateCircumference();
+  L04E02Circle(double radius) {
+    this.radius = radius;
   }
 
-  void calculateArea() {
-    this.area = Math.PI * Math.pow(this.radius, 2);
+  double calculateArea(double radius) {
+    double area = Math.PI * Math.pow(radius, 2);
+    return area;
   }
 
-  void calculateCircumference() {
-    this.circumference = 2 * Math.PI * this.radius;
+  double calculateCircumference(double radius) {
+    double circumference = 2 * Math.PI * radius;
+    return circumference;
   }
 
   void show() {
-    System.out.println("The circle area is:" + this.area);
-    System.out.println("The circle circumference is: " + this.circumference);
+    double area = calculateArea(this.radius);
+    double circumference = calculateCircumference(this.radius);
+
+    System.out.println("The circle area is:" + area);
+    System.out.println("The circle circumference is: " + circumference);
   }
 }

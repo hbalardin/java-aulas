@@ -1,32 +1,25 @@
-import java.util.Scanner;
-
 public class L04E02Square {
   double side;
 
-  double area;
-
-  double perimeter;
-
-  L04E02Square() {
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.print("Enter square side: ");
-    this.side = scanner.nextDouble();
-
-    this.calculateArea();
-    this.calculatePerimeter();
+  L04E02Square(double side) {
+    this.side = side;
   }
 
-  void calculateArea() {
-    this.area = Math.pow(this.side, 2);
+  double calculateArea(double side) {
+    double area = Math.pow(side, 2);
+    return area;
   }
 
-  void calculatePerimeter() {
-    this.perimeter = this.side * 4;
+  double calculatePerimeter(double side) {
+    double perimeter = side * 4;
+    return perimeter;
   }
 
   void show() {
-    System.out.println("The square area is: " + this.area);
-    System.out.println("The square perimeter is: " + this.perimeter);
+    double area = calculateArea(this.side);
+    double perimeter = calculatePerimeter(this.side);
+
+    System.out.println("The square area is: " + area);
+    System.out.println("The square perimeter is: " + perimeter);
   }
 }
