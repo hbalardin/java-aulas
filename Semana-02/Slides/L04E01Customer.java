@@ -9,7 +9,7 @@ public class L04E01Customer {
 
     System.out.print("Enter a name: ");
     this.name = scanner.nextLine();
-    System.out.print("Entre com o email: ");
+    System.out.print("Enter an email: ");
     this.email = scanner.nextLine();
 
     scanner.close();
