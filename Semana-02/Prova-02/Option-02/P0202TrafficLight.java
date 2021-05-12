@@ -6,7 +6,7 @@ public class P0202TrafficLight {
   }
 
   void showColor(){
-    System.out.println(color);
+    System.out.println(this.color);
   }
 
   void changeColor(){
