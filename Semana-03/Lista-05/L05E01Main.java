@@ -20,7 +20,7 @@ public class L05E01Main {
       char response = '0';
       
       while (response != 'y' && response != 'n'){
-        System.out.println("Do you wanna roll again? (y/n) ");
+        System.out.print("Do you wanna roll again? (y/n) ");
         response = scanner.next().charAt(0);
       }
 
