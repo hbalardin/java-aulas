@@ -12,7 +12,7 @@ public class L05E02Bank {
   public String toString(){
     DecimalFormat df = new DecimalFormat("###.##");
     String parsedBalance = df.format(this.balance);
-    return "Balance: R$ " + parsedBalance;
+    return "Balance: $" + parsedBalance;
   }
 
   public double getBalance(){
