@@ -13,6 +13,6 @@ public class L06E01Truck extends L06E01Vehicle {
   }
 
   public void honk(){
-    System.out.println("Fon fon!!");
+    System.out.println("Foooooon!!");
   }
 }

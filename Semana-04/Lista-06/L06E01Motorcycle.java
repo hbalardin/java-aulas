@@ -11,4 +11,11 @@ public class L06E01Motorcycle extends L06E01Vehicle {
 
     return isEletric;
   }
+
+  public int getSpeed(){
+    Random random = new Random();
+    int speed = random.nextInt(61);
+
+    return speed;
+  }
 }
