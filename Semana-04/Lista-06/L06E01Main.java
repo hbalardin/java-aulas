@@ -1,16 +1,31 @@
 public class L06E01Main {
   public static void main(String[] args) {
-    L06E01Car car = new L06E01Car("Ford", "Mustang");
-    System.out.println("== " + car.getVehicleType() + " ==");
-    System.out.println(car);
-    car.honk();
-    System.out.println("My currently speed is " + car.getSpeed() + " km/h.");
+    L06E03ForeignCar foreignCar = new L06E03ForeignCar("Gurgel", "BR800");
+    System.out.println("== " + foreignCar.getVehicleType() + " ==");
+    System.out.println(foreignCar);
+    foreignCar.honk();
+    System.out.println("My currently speed is " + foreignCar.getSpeed() + " km/h.");
     
     String negative = "";
-    if (!car.hasSupportToIsofix()){
+    if (!foreignCar.hasSupportToIsofix()){
       negative += "n't";
     }
     System.out.println("I have" + negative + " support to Isofix.");
+    System.out.println("Fabricator's CNPJ: " + foreignCar.getCNPJ() + ".");
+    
+    L06E03NationalCar nationalCar = new L06E03NationalCar("Ford", "Mustang");
+    System.out.println();
+    System.out.println("== " + nationalCar.getVehicleType() + " ==");
+    System.out.println(nationalCar);
+    nationalCar.honk();
+    System.out.println("My currently speed is " + nationalCar.getSpeed() + " km/h.");
+    
+    negative = "";
+    if (!nationalCar.hasSupportToIsofix()){
+      negative += "n't";
+    }
+    System.out.println("I have" + negative + " support to Isofix.");
+    System.out.println("I'm from " + nationalCar.getCountry() + ".");
     
     L06E01Truck truck = new L06E01Truck("Scania", "Brutus");
     System.out.println();
