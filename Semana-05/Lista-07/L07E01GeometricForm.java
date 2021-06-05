@@ -1,11 +1,8 @@
 public abstract class L07E01GeometricForm {
-  private String form;
   private double perimeter;
   private double area;
 
-  public L07E01GeometricForm(String form) {
-    this.form = form;
-  }
+  public L07E01GeometricForm() {}
 
   public void setArea(double area) {
     this.area = area;
@@ -43,8 +40,5 @@ public abstract class L07E01GeometricForm {
     }
   }
 
-  public void show() {
-    System.out.println("The " + form  + " area is: " + area);
-    System.out.println("The " + form  + " perimeter is: " + perimeter);
-  }
+  public abstract String toString();
 }
