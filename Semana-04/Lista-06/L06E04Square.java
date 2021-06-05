@@ -1,5 +1,5 @@
-public class L06E03Square extends L06E04GeometricForm{
-  public L06E03Square(double side) {
+public class L06E04Square extends L06E04GeometricForm{
+  public L06E04Square(double side) {
     super("square");
 
     this.calculateArea(side);

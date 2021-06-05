@@ -15,7 +15,7 @@ public class L06E04Main {
     L06E04Circle circle = new L06E04Circle(radius);
     circle.show();
     
-    L06E03Square square = new L06E03Square(side);
+    L06E04Square square = new L06E04Square(side);
     square.show();
   }
 }
