@@ -23,12 +23,24 @@ public abstract class L07E01GeometricForm {
     return this.perimeter;
   }
 
-  public boolean hasSameArea(L07E01GeometricForm form){
-    return form.getArea() == this.getArea();
+  public int compareArea(L07E01GeometricForm form){
+    if (form.getArea() > this.getArea()) {
+      return 1;
+    } else if (form.getArea() == this.getArea()){
+      return 0;
+    } else {
+      return -1;
+    }
   }
 
-  public boolean hasSamePerimeter(L07E01GeometricForm form){
-    return form.getPerimeter() == this.getPerimeter();
+  public int comparePerimeter(L07E01GeometricForm form){
+    if (form.getPerimeter() > this.getPerimeter()) {
+      return 1;
+    } else if (form.getPerimeter() == this.getPerimeter()){
+      return 0;
+    } else {
+      return -1;
+    }
   }
 
   public void show() {
